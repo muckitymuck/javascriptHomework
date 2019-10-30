@@ -1,0 +1,55 @@
+<html>
+<body>
+<script type="text/javascript">
+
+var num1;
+var num2;
+var BR = "<br \>";
+var ES = "";
+var addresult;
+var multiresult;
+var minusresult;
+var dividedresult;
+
+num1 = prompt("Enter the first number: ", ES);
+num1 = parseInt(num1)
+
+num2 = prompt("Enter the second number: ", ES);
+num2 = parseInt(num2)
+
+function addd(num1, num2){
+	addresult = num1 + num2;
+	return addresult;
+}
+function multi(num1, num2){
+	multiresult = num1 * num2;
+	return multiresult;
+}
+function minused(num1, num2){
+	minusresult = num1 - num2;
+	return minusresult;
+}
+function divided(num1, num2){
+	dividedresult = num1 % num2;
+	return dividedresult;
+}
+function display(addresult, multiresult, minusresult, dividedresult){
+	document.write("The addition result is: " + addresult + BR);
+	document.write("The multiple result is: " + multiresult + BR);
+	document.write("The difference is: " + minusresult + BR);
+	document.write("The modulus result is: " + dividedresult + BR);
+}
+addd(num1,num2);
+multi(num1,num2);
+minused(num1,num2);
+divided(num1,num2);
+document.write("Between the numbers " + num1 + " and " + num2 + BR);
+
+display(addresult,multiresult,minusresult,dividedresult);
+
+	
+</script>
+</body>
+</html>
+
+

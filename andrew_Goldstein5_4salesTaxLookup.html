@@ -1,0 +1,27 @@
+<html>
+<body>
+<script type="text/javascript">
+
+var salesAmount;
+var ES = "";
+var BR = "<br />";
+
+salesAmount = prompt("Please enter any sales amount under $1.00: ", ES);
+salesAmount = parseInt(salesAmount)
+
+if (salesAmount <= .07){
+	document.write("There is no sales tax.");
+	}
+else if (salesAmount <= .21){
+	document.write("Sales tax is $.01");
+	}
+else {
+	document.write("Please check back in 10 minutes.");
+	}
+
+	
+</script>
+</body>
+</html>
+
+

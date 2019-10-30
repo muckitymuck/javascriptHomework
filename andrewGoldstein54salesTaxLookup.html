@@ -1,0 +1,45 @@
+<html>
+<body>
+<script type="text/javascript">
+ 
+
+var salesAmount;
+var ES = ""
+var BR = "<br />";
+
+salesAmount = prompt("Please enter any sales amount under $1.00 with cents in whole numbers: ", ES);
+salesAmount = parseInt(salesAmount)
+
+
+if (salesAmount <= 07){
+	document.write("There is no sales tax.");
+	}
+else if (salesAmount <= 21){
+	document.write("Sales tax is $.01");
+	}
+else if (salesAmount <= 35){
+	document.write("Sales tax is $.02");
+	}
+else if (salesAmount <= 49){
+	document.write("Sales tax is $.03");
+	}
+else if (salesAmount <= 64){
+	document.write("Sales tax is $.04");
+	}
+else if (salesAmount <= 78){
+	document.write("Sales tax is $.05");
+	}
+else if (salesAmount <= 92){
+	document.write("Sales tax is $.06");
+	}
+else {
+	document.write("Sales tax is $.07");
+	}
+	
+</script>
+</body>
+</html>
+
+
+
+

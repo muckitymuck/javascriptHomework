@@ -1,0 +1,54 @@
+<html>
+<body>
+<script type="text/javascript">
+
+var absences = 0;
+var perc = 0;
+var percRound = 0;
+var letterGrade;
+var passFail;
+var ES = "";
+var BR = "<br />";
+
+absences = prompt("Please enter the number of absences: ", ES);
+perc = prompt("Please enter the grade percentage: ", ES);
+percRound = Math.round(perc);
+
+if (absences <= 2 && percRound >= 60){
+	percRound = percRound + 3;
+	passFail = "Pass with a bonus of 3 points";
+	}
+else if (absences < 5 && percRound >= 60){
+	passFail = "Pass";
+	}
+else {
+	passFail = "Fail";
+	}
+	
+if (percRound >= 90){
+	letterGrade = "A";
+	}
+else if(percRound >= 80){
+	letterGrade = "B";
+	}
+else if(percRound >= 70){
+	letterGrade = "C";
+	}
+else if(percRound >= 60){
+	letterGrade = "D";
+	}
+else {
+	letterGrade = "F";
+	}
+document.write("Grade: " + letterGrade + " " + percRound + "%" + BR);
+document.write("Absences: " + absences + BR);
+document.write("Pass/Fail: " + passFail + BR);
+
+
+
+	
+</script>
+</body>
+</html>
+
+
